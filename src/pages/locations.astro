@@ -25,7 +25,7 @@ const otherCommunes = [
         {communes.map(commune => (
           <a href={`/locations/${commune.slug}`} class="bg-white rounded-xl shadow-sm hover:shadow-xl border border-gray-100 transition-all group block overflow-hidden">
             <div class="h-32 w-full relative">
-              <img src={commune.heroImage} alt={commune.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src={commune.heroImage} alt={commune.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
               <div class="absolute inset-0 bg-dark/40 group-hover:bg-dark/20 transition-colors"></div>
               <div class="absolute bottom-4 left-4 text-white font-bold text-xl drop-shadow-md">
                 Plombier {commune.name}

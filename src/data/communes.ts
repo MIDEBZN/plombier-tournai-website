@@ -34,7 +34,7 @@ export const communes: Commune[] = [
       { point: "Tarification", us: "Devis clair avant travaux", others: "Frais cachés fréquents (déplacement, majoration)" },
       { point: "Artisanat local", us: "Entreprise 100% locale (Tournaisis)", others: "Plateformes de mise en relation nationales" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fm=webp&fit=crop&w=1920&q=80"
   },
   {
     slug: "froyennes",
@@ -52,7 +52,7 @@ export const communes: Commune[] = [
       { point: "Tarification", us: "Devis clair avant travaux", others: "Frais cachés fréquents (déplacement, majoration)" },
       { point: "Artisanat local", us: "Entreprise 100% locale (Tournaisis)", others: "Plateformes de mise en relation nationales" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1574360743628-fea218e8dc48?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1574360743628-fea218e8dc48?auto=format&fm=webp&fit=crop&w=1920&q=80"
   },
   {
     slug: "mouscron",
@@ -70,7 +70,7 @@ export const communes: Commune[] = [
       { point: "Transparence", us: "Prix forfaitaires clairs", others: "Tarification horaire incertaine" },
       { point: "Pièces", us: "Stock d'urgence dans nos camions", others: "Attente de commande fournisseur" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fm=webp&fit=crop&w=1920&q=80"
   },
   {
     slug: "ath",
@@ -88,7 +88,7 @@ export const communes: Commune[] = [
       { point: "Tarification", us: "Devis gratuit sans engagement", others: "Devis payant ou déplacement facturé" },
       { point: "Garantie", us: "Garantie décennale et pièces", others: "Garantie limitée" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fm=webp&fit=crop&w=1920&q=80"
   },
   {
     slug: "peruwelz",
@@ -106,7 +106,7 @@ export const communes: Commune[] = [
       { point: "Tarification", us: "Pas de majoration kilométrique excessive", others: "Frais de déplacement élevés" },
       { point: "Agréation", us: "Chauffagistes agréés CERGA/CEDICO", others: "Non agréés" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fm=webp&fit=crop&w=1920&q=80"
   },
   {
     slug: "orcq",
@@ -124,6 +124,6 @@ export const communes: Commune[] = [
       { point: "Tarification", us: "Devis clair avant travaux", others: "Frais cachés fréquents (déplacement, majoration)" },
       { point: "Artisanat local", us: "Entreprise 100% locale (Tournaisis)", others: "Plateformes de mise en relation nationales" }
     ],
-    heroImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80"
+    heroImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fm=webp&fit=crop&w=1920&q=80"
   }
 ];

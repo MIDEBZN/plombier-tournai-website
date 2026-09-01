@@ -21,7 +21,7 @@ const { commune } = Astro.props;
   <!-- Hero Section -->
   <div class="bg-dark text-white pt-24 pb-16 relative overflow-hidden">
     <div class="absolute inset-0">
-      <img src={commune.heroImage} alt={`Vue de ${commune.name}`} class="w-full h-full object-cover opacity-20" />
+      <img src={commune.heroImage} alt={`Vue de ${commune.name}`} class="w-full h-full object-cover opacity-20" loading="eager" fetchpriority="high" />
       <div class="absolute inset-0 bg-gradient-to-r from-dark to-dark/80"></div>
     </div>
     
