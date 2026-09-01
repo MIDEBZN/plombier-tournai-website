@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqs = [
+  { q: "À quelle fréquence dois-je faire l'entretien de ma chaudière ?", a: "En Belgique, l'entretien d'une chaudière au gaz est obligatoire tous les 2 ans, et tous les ans pour une chaudière au mazout. C'est essentiel pour la sécurité, le rendement et la validité de votre assurance." },
+  { q: "Quelles marques de chaudières réparez-vous ?", a: "Nous intervenons sur la grande majorité des marques présentes sur le marché belge : Vaillant, Bulex, Viessmann, Junkers, Buderus, et bien d'autres." },
+  { q: "Installez-vous des pompes à chaleur ?", a: "Oui, nous sommes spécialisés dans l'installation et l'entretien de pompes à chaleur (air/eau, air/air) pour une solution de chauffage plus écologique et économique." },
+  { q: "Délivrez-vous l'attestation légale après un entretien ?", a: "Absolument. En tant que chauffagistes agréés (CERGA/CEDICO), nous vous délivrons l'attestation de contrôle périodique obligatoire à l'issue de chaque entretien." }
+];
+---
+
+<Layout title="Chauffagiste Tournai | Entretien et Dépannage Chaudière" description="Chauffagiste agréé à Tournai : entretien annuel obligatoire, réparation d'urgence, et installation de chaudières et pompes à chaleur. Devis gratuit.">
+  
+  <!-- Hero Section -->
+  <div class="bg-dark text-white pt-24 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Chauffage & <span class="text-orange-500">Chaudières</span></h1>
+      <p class="text-xl text-gray-300 max-w-2xl mb-8">Installation, entretien obligatoire et réparation urgente. Artisans chauffagistes agréés à Tournai pour un confort thermique optimal et sécurisé en toute saison.</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:+32000000000" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg text-center transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-500/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path></svg>
+          Dépannage Chauffage: +32 000 00 00 00
+        </a>
+        <a href="/contact" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg text-center transition-all backdrop-blur-sm">
+          Planifier un entretien
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-12">
+        
+        <!-- Services Grid -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">L'expertise Chauffage de A à Z</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+              <div class="text-orange-500 mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+              </div>
+              <h3 class="font-bold text-dark text-lg mb-2">Dépannage d'urgence</h3>
+              <p class="text-gray-600 text-sm">Réparation rapide de chaudières en panne, radiateurs froids, thermostat défectueux ou fuite sur le circuit de chauffage.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+              <div class="text-green-500 mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <h3 class="font-bold text-dark text-lg mb-2">Entretien obligatoire</h3>
+              <p class="text-gray-600 text-sm">Entretien réglementaire avec remise d'attestation légale pour chaudières gaz et mazout. Optimisation du rendement.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+              <div class="text-blue-500 mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+              </div>
+              <h3 class="font-bold text-dark text-lg mb-2">Installation & Remplacement</h3>
+              <p class="text-gray-600 text-sm">Pose de nouvelles chaudières à condensation haute performance énergétique. Devis gratuit sur mesure.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+              <div class="text-emerald-500 mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <h3 class="font-bold text-dark text-lg mb-2">Pompes à chaleur</h3>
+              <p class="text-gray-600 text-sm">Installation de systèmes de chauffage écologiques (PAC air-eau, PAC air-air) pour réduire vos factures énergétiques.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- What's Included (Maintenance) -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Ce que comprend l'entretien annuel</h2>
+          <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+            <p class="text-gray-600 mb-4">L'entretien régulier de votre chaudière est obligatoire et vous fait économiser jusqu'à 12% d'énergie. Notre intervention comprend :</p>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6">
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Nettoyage du corps de chauffe
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Contrôle du brûleur
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Vérification des sécurités
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Analyse des gaz de combustion
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Réglage de la combustion
+              </li>
+              <li class="flex items-center gap-2 text-sm text-gray-700">
+                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Remise de l'attestation légale
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Our Process -->
+        <section class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+          <h2 class="text-3xl font-bold text-dark mb-8">Le processus d'installation d'une nouvelle chaudière</h2>
+          <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">1</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Audit thermique gratuit</h3>
+                <p class="text-sm text-gray-600 mt-1">Nous évaluons les besoins réels de votre habitation pour dimensionner parfaitement la puissance de la chaudière.</p>
+              </div>
+            </div>
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">2</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Devis clair</h3>
+                <p class="text-sm text-gray-600 mt-1">Proposition transparente détaillant l'équipement, la main d'œuvre et l'évacuation de l'ancienne chaudière.</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">3</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Installation professionnelle</h3>
+                <p class="text-sm text-gray-600 mt-1">Pose soignée réalisée par des chauffagistes agréés CERGA, respectant toutes les normes de sécurité en vigueur.</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">4</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Mise en service & Primes</h3>
+                <p class="text-sm text-gray-600 mt-1">Réglages, réception légale, et accompagnement pour l'obtention des primes régionales wallonnes.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- FAQs -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Questions Fréquentes (FAQ)</h2>
+          <div class="space-y-4">
+            {faqs.map(faq => (
+              <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark text-lg mb-2">{faq.q}</h3>
+                <p class="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1 space-y-8">
+        
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg sticky top-28">
+          <h3 class="text-xl font-bold text-dark mb-4">Agréations Officielles</h3>
+          <p class="text-gray-600 text-sm mb-6">Faites appel à des professionnels certifiés par la région pour votre sécurité et vos assurances.</p>
+          
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center gap-4 bg-gray-50 p-3 rounded-lg border border-gray-100">
+              <div class="w-12 h-12 bg-blue-100 text-primary rounded-full flex items-center justify-center shrink-0 font-bold">CG</div>
+              <div>
+                <p class="font-bold text-dark text-sm">Agréé CERGA</p>
+                <p class="text-xs text-gray-500">Spécialiste Gaz Naturel</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-gray-50 p-3 rounded-lg border border-gray-100">
+              <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center shrink-0 font-bold">CD</div>
+              <div>
+                <p class="font-bold text-dark text-sm">Agréé CEDICO</p>
+                <p class="text-xs text-gray-500">Combustibles liquides</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="/contact" class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors mb-3">
+            Demander un devis installation
+          </a>
+          <a href="tel:+32000000000" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            Dépannage Urgence Chauffage
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

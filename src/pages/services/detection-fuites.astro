@@ -1,0 +1,205 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqs = [
+  { q: "Qu'est-ce qu'une recherche de fuite 'non destructive' ?", a: "C'est une méthode qui permet de localiser exactement une fuite cachée (sous le carrelage, dans un mur, sous terre) sans avoir à casser quoi que ce soit. Nous utilisons des technologies avancées comme l'infrarouge ou les ondes sonores." },
+  { q: "Quelles technologies utilisez-vous ?", a: "Nous sommes équipés de caméras thermiques infrarouges, de détecteurs électro-acoustiques, de caméras endoscopiques pour canalisations, et nous utilisons également la méthode au gaz traceur." },
+  { q: "Votre intervention est-elle prise en charge par l'assurance ?", a: "Dans la majorité des cas de dégâts des eaux, les frais de recherche de fuite sont pris en charge par votre assurance habitation. Nous fournissons un rapport détaillé avec photos pour votre assureur." },
+  { q: "Combien de temps dure la détection ?", a: "En général, une détection prend entre 1 et 3 heures selon la complexité du réseau et l'origine de la fuite." }
+];
+---
+
+<Layout title="Recherche de Fuite d'Eau Non Destructive à Tournai" description="Spécialiste en recherche de fuite d'eau sans casse à Tournai. Détection par caméra thermique, gaz traceur et acoustique. Rapport fourni pour assurance.">
+  
+  <!-- Hero Section -->
+  <div class="bg-dark text-white pt-24 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Recherche de Fuite <br/><span class="text-secondary">Non Destructive</span></h1>
+      <p class="text-xl text-gray-300 max-w-2xl mb-8">Nous localisons précisément les fuites cachées (murs, sols, plafonds) sans aucune casse, grâce à nos équipements de pointe (caméra thermique, gaz traceur). Rapport détaillé pour votre assurance.</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/contact" class="bg-secondary hover:bg-secondary-hover text-white px-8 py-4 rounded-lg font-bold text-lg text-center transition-all flex items-center justify-center gap-2 shadow-lg shadow-secondary/30">
+          Obtenir un Devis Gratuit
+        </a>
+        <a href="tel:+32000000000" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg text-center transition-all backdrop-blur-sm">
+          Appel Urgence: +32 000 00 00 00
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-12">
+        
+        <!-- Common Problems -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Symptômes d'une fuite cachée</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-primary mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Baisse de pression chaudière</h3>
+                <p class="text-gray-600 text-sm mt-1">Vous devez constamment rajouter de l'eau dans votre circuit de chauffage.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-primary mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Traces d'humidité</h3>
+                <p class="text-gray-600 text-sm mt-1">Taches d'eau, moisissures ou cloques de peinture sur vos murs ou plafonds.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-primary mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Facture d'eau anormale</h3>
+                <p class="text-gray-600 text-sm mt-1">Votre consommation d'eau a subitement augmenté sans explication.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-primary mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Bruits d'écoulement</h3>
+                <p class="text-gray-600 text-sm mt-1">Vous entendez l'eau couler dans les murs alors que tous les robinets sont fermés.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What's Included -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Nos Technologies de Détection</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Caméra Thermique Infrarouge :</strong> Permet de visualiser les différences de température dans les murs et sols, idéal pour les fuites d'eau chaude ou de chauffage.</span>
+            </li>
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Détection Électro-acoustique :</strong> Amplification du bruit généré par la fuite sous pression pour la localiser avec une extrême précision.</span>
+            </li>
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Injection de Gaz Traceur :</strong> Injection d'un gaz inoffensif dans les canalisations vides. Le gaz s'échappe par la fuite et remonte à la surface où il est détecté.</span>
+            </li>
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Endoscopie :</strong> Introduction d'une mini-caméra dans les tuyaux et gaines techniques pour une inspection visuelle directe.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Our Process -->
+        <section class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+          <h2 class="text-3xl font-bold text-dark mb-8">Notre Processus (100% Sans Casse)</h2>
+          <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">1</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Étude des lieux</h3>
+                <p class="text-sm text-gray-600 mt-1">Vérification du compteur, observation des dégâts et compréhension du réseau de plomberie.</p>
+              </div>
+            </div>
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">2</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Mise sous test</h3>
+                <p class="text-sm text-gray-600 mt-1">Mise en pression des circuits d'eau froide, chaude et chauffage pour isoler le réseau défectueux.</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">3</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Recherche Instrumentale</h3>
+                <p class="text-sm text-gray-600 mt-1">Utilisation des outils spécifiques (thermique, acoustique, gaz) pour trouver l'emplacement exact de la fuite (au centimètre près).</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">4</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Rapport d'intervention</h3>
+                <p class="text-sm text-gray-600 mt-1">Fourniture d'un rapport détaillé avec photos, utilisable directement pour votre compagnie d'assurance.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- FAQs -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Questions Fréquentes (FAQ)</h2>
+          <div class="space-y-4">
+            {faqs.map(faq => (
+              <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark text-lg mb-2">{faq.q}</h3>
+                <p class="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1 space-y-8">
+        
+        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-lg sticky top-28">
+          <h3 class="text-xl font-bold text-dark mb-4">Prise en charge Assurance</h3>
+          <p class="text-gray-600 text-sm mb-6">Dans 90% des cas, les frais de recherche de fuite sans casse sont pris en charge par votre assurance habitation (garantie Dégâts des eaux).</p>
+          
+          <ul class="space-y-3 mb-6 text-sm">
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">Rapport détaillé fourni</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">Photos et diagnostic inclus</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">Devis de réparation immédiat</span>
+            </li>
+          </ul>
+          
+          <a href="/contact" class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors mb-3">
+            Demander une intervention
+          </a>
+          <a href="tel:+32000000000" class="w-full bg-white text-dark border border-gray-200 hover:bg-gray-50 font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors">
+            Questions ? Appelez-nous
+          </a>
+        </div>
+
+        <!-- Service Area -->
+        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+          <h3 class="text-lg font-bold text-dark mb-4">Zone d'intervention</h3>
+          <p class="text-sm text-gray-700 mb-2">Nous intervenons rapidement à :</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-white border border-blue-200 text-gray-700 text-xs px-2 py-1 rounded">Tournai</span>
+            <span class="bg-white border border-blue-200 text-gray-700 text-xs px-2 py-1 rounded">Mouscron</span>
+            <span class="bg-white border border-blue-200 text-gray-700 text-xs px-2 py-1 rounded">Ath</span>
+            <span class="bg-white border border-blue-200 text-gray-700 text-xs px-2 py-1 rounded">Péruwelz</span>
+            <span class="bg-white border border-blue-200 text-gray-700 text-xs px-2 py-1 rounded">Région frontalière</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

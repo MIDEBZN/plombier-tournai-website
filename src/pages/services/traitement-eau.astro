@@ -1,0 +1,183 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqs = [
+  { q: "Pourquoi installer un adoucisseur d'eau à Tournai ?", a: "L'eau de la région de Tournai est souvent très 'dure' (calcaire). Un adoucisseur protège vos appareils électroménagers (lave-linge, chaudière, boiler), réduit votre consommation de savon de 50%, et préserve votre peau des irritations." },
+  { q: "Combien coûte l'entretien d'un adoucisseur ?", a: "L'entretien d'un adoucisseur est très abordable. Il consiste principalement à rajouter des sels régénérants de temps en temps et à faire une révision annuelle par un professionnel pour garantir son efficacité." },
+  { q: "L'eau adoucie est-elle potable ?", a: "Oui, tout à fait. L'adoucisseur remplace les ions calcium et magnésium par des ions sodium, mais l'eau reste parfaitement potable et propre à la consommation selon les normes belges." },
+  { q: "Quelle est la durée de vie d'un adoucisseur d'eau ?", a: "Avec un entretien régulier, un adoucisseur d'eau de qualité professionnelle (que nous installons) peut durer entre 15 et 20 ans sans aucun problème." }
+];
+---
+
+<Layout title="Traitement de l'Eau & Adoucisseurs à Tournai" description="Installation et entretien d'adoucisseurs d'eau à Tournai. Protégez votre plomberie et vos appareils électroménagers contre le calcaire. Devis gratuit.">
+  
+  <!-- Hero Section -->
+  <div class="bg-dark text-white pt-24 pb-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-blue-900/30"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Traitement de l'Eau & <span class="text-blue-300">Adoucisseurs</span></h1>
+      <p class="text-xl text-gray-300 max-w-2xl mb-8">Dites adieu au calcaire dans la région de Tournai. Protégez vos installations, vos appareils électroménagers et votre peau grâce à nos solutions de traitement de l'eau.</p>
+      
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg text-center transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-500/30">
+          Demander une offre gratuite
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      
+      <!-- Main Content -->
+      <div class="lg:col-span-2 space-y-12">
+        
+        <!-- Common Problems -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Les dégâts causés par le calcaire</h2>
+          <p class="text-gray-600 mb-6">L'eau dure (fortement chargée en calcaire) est le premier ennemi de votre plomberie et de votre confort au quotidien :</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-red-500 mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Pannes d'électroménager</h3>
+                <p class="text-gray-600 text-sm mt-1">Résistances de lave-linge, lave-vaisselle ou boiler entartrées causant surconsommation et pannes.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-red-500 mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Tuyauteries bouchées</h3>
+                <p class="text-gray-600 text-sm mt-1">Réduction du débit d'eau et obstruction progressive des conduites d'eau chaude.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-blue-500 mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Problèmes de peau</h3>
+                <p class="text-gray-600 text-sm mt-1">Peau sèche, tiraillements, eczéma et cheveux ternes dus à la dureté de l'eau.</p>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
+              <div class="text-blue-500 mt-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-dark text-lg">Surconsommation</h3>
+                <p class="text-gray-600 text-sm mt-1">Augmentation de la consommation de produits ménagers (savons, détergents) pour compenser.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What's Included -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Nos Solutions de Traitement</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Adoucisseurs à sel (résine) :</strong> La solution la plus efficace et durable pour éliminer le calcaire de toute votre habitation. Idéal pour les familles.</span>
+            </li>
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Filtres anti-calcaire et impuretés :</strong> Systèmes de filtration à l'arrivée d'eau pour protéger vos tuyaux des sédiments, du sable et de la boue.</span>
+            </li>
+            <li class="flex items-start gap-3 text-gray-700">
+              <svg class="w-6 h-6 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span><strong>Entretien & Maintenance :</strong> Contrat d'entretien annuel, fourniture de sel régénérant, et réglage de la dureté de l'eau résiduelle.</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Our Process -->
+        <section class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+          <h2 class="text-3xl font-bold text-dark mb-8">Processus d'Installation</h2>
+          <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">1</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Analyse de l'eau</h3>
+                <p class="text-sm text-gray-600 mt-1">Nous testons la dureté de votre eau (degrés français) pour calibrer l'appareil dont vous avez besoin.</p>
+              </div>
+            </div>
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">2</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Choix du matériel</h3>
+                <p class="text-sm text-gray-600 mt-1">Sélection de l'adoucisseur adapté à la taille de votre foyer et à votre consommation d'eau.</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">3</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Installation au compteur</h3>
+                <p class="text-sm text-gray-600 mt-1">Raccordement professionnel sur l'arrivée d'eau principale, incluant le by-pass pour isoler la machine si besoin.</p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 font-bold z-10">4</div>
+              <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark">Mise en route & Réglages</h3>
+                <p class="text-sm text-gray-600 mt-1">Configuration de la vanne volumétrique et ajustement de la dureté résiduelle souhaitée.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- FAQs -->
+        <section>
+          <h2 class="text-3xl font-bold text-dark mb-6">Questions Fréquentes (FAQ)</h2>
+          <div class="space-y-4">
+            {faqs.map(faq => (
+              <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-dark text-lg mb-2">{faq.q}</h3>
+                <p class="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-1 space-y-8">
+        
+        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 shadow-sm sticky top-28">
+          <h3 class="text-xl font-bold text-dark mb-4">Investissement Rentable</h3>
+          <p class="text-gray-700 text-sm mb-6">Un adoucisseur d'eau s'amortit généralement en moins de 3 ans grâce aux économies réalisées.</p>
+          
+          <ul class="space-y-3 mb-6 text-sm">
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">-50% sur les produits ménagers</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">+20% de durée de vie de vos appareils</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-secondary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              <span class="text-gray-700 font-medium">-15% sur la facture énergétique</span>
+            </li>
+          </ul>
+          
+          <a href="/contact" class="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors mb-3">
+            Demander une offre gratuite
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</Layout>

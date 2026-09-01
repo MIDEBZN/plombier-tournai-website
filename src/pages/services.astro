@@ -1,83 +1,88 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const services = [
+  {
+    title: "Dépannage d'Urgence",
+    description: "Intervention en moins de 30 minutes 24h/24 pour fuites, pannes de chaudière et urgences diverses.",
+    icon: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z",
+    href: "/services/depannage-urgence",
+    color: "text-red-500",
+    bg: "bg-red-50"
+  },
+  {
+    title: "Débouchage",
+    description: "Débouchage WC, éviers, égouts. Curage haute pression et vidange de fosses septiques.",
+    icon: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16",
+    href: "/services/debouchage",
+    color: "text-blue-500",
+    bg: "bg-blue-50"
+  },
+  {
+    title: "Détection de Fuites",
+    description: "Recherche de fuite non destructive (caméra thermique, gaz traceur). Rapport d'assurance fourni.",
+    icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z",
+    href: "/services/detection-fuites",
+    color: "text-indigo-500",
+    bg: "bg-indigo-50"
+  },
+  {
+    title: "Chauffage & Chaudières",
+    description: "Installation, entretien annuel obligatoire et réparation de chaudières (gaz/mazout) et pompes à chaleur.",
+    icon: "M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z",
+    href: "/services/chauffage-chaudieres",
+    color: "text-orange-500",
+    bg: "bg-orange-50"
+  },
+  {
+    title: "Installations Sanitaires",
+    description: "Rénovation de salle de bain, installation de douche à l'italienne, WC suspendus et robinetterie.",
+    icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6",
+    href: "/services/installations-sanitaires",
+    color: "text-teal-500",
+    bg: "bg-teal-50"
+  },
+  {
+    title: "Traitement de l'Eau",
+    description: "Installation d'adoucisseurs d'eau et de systèmes de filtration pour protéger vos canalisations du calcaire.",
+    icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
+    href: "/services/traitement-eau",
+    color: "text-cyan-500",
+    bg: "bg-cyan-50"
+  }
+];
 ---
 
-<Layout title="Nos Services de Plomberie et Chauffage à Tournai" description="Découvrez nos services d'installation de chaudière, dépannage plomberie, débouchage canalisation et recherche de fuite d'eau à Tournai.">
-  <!-- Page Header -->
+<Layout title="Nos Services de Plomberie et Chauffage à Tournai" description="Découvrez nos 6 domaines d'expertise : Dépannage urgence, débouchage, recherche de fuite, chauffage, sanitaire et traitement de l'eau.">
+  
   <div class="bg-dark text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Nos Services</h1>
-      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Une gamme complète de solutions pour votre plomberie et votre chauffage, avec une expertise certifiée.</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Nos Expertises</h1>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto">Une équipe d'artisans qualifiés pour répondre à tous vos besoins en plomberie et chauffage à Tournai.</p>
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <a href={service.href} class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all group hover:-translate-y-1 block">
+          <div class={`w-14 h-14 ${service.bg} ${service.color} rounded-xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110`}>
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={service.icon}></path></svg>
+          </div>
+          <h2 class="text-2xl font-bold text-dark mb-3 group-hover:text-primary transition-colors">{service.title}</h2>
+          <p class="text-gray-600 mb-6 line-clamp-3">{service.description}</p>
+          <div class="flex items-center text-primary font-bold text-sm">
+            En savoir plus 
+            <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </div>
+        </a>
+      ))}
+    </div>
     
-    <!-- Service: Plomberie -->
-    <div id="plomberie" class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2">
-        <img src="https://images.unsplash.com/photo-1607472586893-edb57cbce4ea?auto=format&fit=crop&w=800&q=80" alt="Dépannage Plomberie" class="rounded-xl shadow-lg w-full h-80 object-cover" />
-      </div>
-      <div class="w-full md:w-1/2 space-y-4">
-        <h2 class="text-3xl font-bold text-dark">Dépannage & Installation Plomberie</h2>
-        <p class="text-gray-600 leading-relaxed">
-          Que ce soit pour une simple fuite sous un évier ou la rénovation complète de votre salle de bain, nos plombiers qualifiés interviennent rapidement avec le matériel adapté.
-        </p>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Réparation de fuites d'eau urgentes</li>
-          <li>Remplacement de robinetterie et WC</li>
-          <li>Installation sanitaire complète</li>
-          <li>Remplacement de boiler électrique</li>
-        </ul>
-        <div class="pt-4">
-          <a href="/contact" class="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition-colors inline-block">Demander une intervention</a>
-        </div>
-      </div>
+    <div class="mt-16 bg-blue-50 rounded-2xl p-8 lg:p-12 text-center border border-blue-100 flex flex-col items-center">
+      <h3 class="text-2xl font-bold text-dark mb-4">Vous ne trouvez pas votre service ?</h3>
+      <p class="text-gray-700 max-w-2xl mb-8">N'hésitez pas à nous contacter directement. Nous prenons en charge la grande majorité des travaux de plomberie générale et de chauffage.</p>
+      <a href="/contact" class="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-lg font-bold transition-colors">Contactez-nous pour en discuter</a>
     </div>
-
-    <!-- Service: Chauffage -->
-    <div id="chauffage" class="flex flex-col md:flex-row-reverse gap-12 items-center">
-      <div class="w-full md:w-1/2">
-        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Installation Chaudière" class="rounded-xl shadow-lg w-full h-80 object-cover" />
-      </div>
-      <div class="w-full md:w-1/2 space-y-4">
-        <h2 class="text-3xl font-bold text-dark">Chauffage & Chaudière</h2>
-        <p class="text-gray-600 leading-relaxed">
-          Artisans chauffagistes agréés CERGA, nous assurons l'entretien annuel obligatoire, la réparation en urgence et l'installation de votre nouvelle chaudière (Vaillant, Bulex, Viessmann, etc.).
-        </p>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Entretien chaudière gaz et mazout</li>
-          <li>Dépannage chaudière en panne 24/7</li>
-          <li>Installation de pompe à chaleur</li>
-          <li>Détartrage chauffe-eau</li>
-        </ul>
-        <div class="pt-4">
-          <a href="/contact" class="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition-colors inline-block">Devis Gratuit</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Service: Débouchage -->
-    <div id="debouchage" class="flex flex-col md:flex-row gap-12 items-center">
-      <div class="w-full md:w-1/2">
-        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80" alt="Débouchage Canalisation" class="rounded-xl shadow-lg w-full h-80 object-cover" />
-      </div>
-      <div class="w-full md:w-1/2 space-y-4">
-        <h2 class="text-3xl font-bold text-dark">Débouchage Canalisation</h2>
-        <p class="text-gray-600 leading-relaxed">
-          Un évier bouché ou des toilettes qui débordent ? Nous disposons de matériel professionnel d'hydrocurage haute pression pour résoudre définitivement vos problèmes d'obstruction.
-        </p>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Débouchage égout haute pression</li>
-          <li>Inspection caméra des canalisations</li>
-          <li>Vidange fosse septique</li>
-          <li>Élimination des mauvaises odeurs</li>
-        </ul>
-        <div class="pt-4">
-          <a href="/contact" class="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-bold transition-colors inline-block">Urgence Débouchage</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </Layout>
