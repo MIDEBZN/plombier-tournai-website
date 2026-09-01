@@ -1,0 +1,23 @@
+---
+const stats = [
+  { value: "15+", label: "Années d'expérience", icon: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
+  { value: "30", label: "Minutes max d'attente (Urgence)", icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" },
+  { value: "2500+", label: "Interventions réussies", icon: "M5 13l4 4L19 7" },
+  { value: "100%", label: "Clients satisfaits", icon: "M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" }
+];
+---
+<section class="py-16 bg-blue-50 border-y border-blue-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      {stats.map(stat => (
+        <div class="flex flex-col items-center">
+          <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={stat.icon}></path></svg>
+          </div>
+          <div class="text-4xl font-extrabold text-dark mb-2">{stat.value}</div>
+          <div class="text-gray-600 font-medium text-sm uppercase tracking-wide">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

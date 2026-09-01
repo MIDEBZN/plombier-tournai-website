@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Stats from '../components/Stats.astro';
+import Testimonials from '../components/Testimonials.astro';
+import ServiceAreaMap from '../components/ServiceAreaMap.astro';
+import TrustBadges from '../components/TrustBadges.astro';
 ---
 
 <Layout title="Plombier Tournai - Dépannage et Urgence 24/7" description="Plombier chauffagiste à Tournai. Dépannage urgent 24/7, installation, entretien et débouchage. Devis gratuit et intervention rapide.">
@@ -102,6 +106,9 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Stats Section -->
+  <Stats />
+
   <!-- Core Services Section -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -169,6 +176,15 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </section>
+
+  <!-- Trust Badges Section -->
+  <TrustBadges />
+
+  <!-- Service Area Map Section -->
+  <ServiceAreaMap />
+
+  <!-- Testimonials Section -->
+  <Testimonials />
 
   <!-- CTA Bar -->
   <section class="bg-primary py-12">
